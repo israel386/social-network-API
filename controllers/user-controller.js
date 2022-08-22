@@ -20,6 +20,7 @@ const userController = {
             });
     },
 
+    // Get user by id
     getUserById({ params }, res) {
         User.findOne({ _id: params.id })
             .populate({
@@ -118,4 +119,4 @@ const userController = {
     }
 };
 
-module.exports = userController;
+module.exports = userController; 
